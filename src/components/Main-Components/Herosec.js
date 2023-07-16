@@ -12,7 +12,7 @@ export default function Herosec() {
             <div className="hero-content content-width">
                 <div className="section-header">
                     <h4 className="subtitle scroll-animation" data-animation="fade_from_bottom" data-aos='fade-up'>
-                        <i className="las la-home"></i> Introduce
+                        <i className="las la-home"></i> Intro
                     </h4>
                     <h1 className="scroll-animation" data-aos='fade-up'>Bonjour, Je suis <span>Mohamed Rguez</span>, Ingénieur Industrialisation et chef de projet MES digitalisation et smart industrie 4.0</h1>
                 </div>

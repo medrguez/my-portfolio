@@ -1,4 +1,5 @@
 import React from "react";
+import ReactPlayer from 'react-player'
 
 export default function Lsb() {
   return (
@@ -15,7 +16,7 @@ export default function Lsb() {
       <img className="me" src="./assets/images/Photo-med.png" alt="Me" />
       <h1 className="name">Rguez Mohamed</h1>
       <h2 className="email">lessirguez@gmail.com</h2>
-      <h2 className="address">Basé à Annonay 07100</h2>
+      <h2 className="address">+33 6 35 58 66 97</h2>
       <p className="copyright">&copy; 2023 Med Rguez. Tous droits réservés.</p>
       <ul className="social-profile d-flex align-items-center flex-wrap justify-content-center">
         <li>
