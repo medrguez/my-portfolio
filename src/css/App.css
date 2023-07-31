@@ -1136,6 +1136,60 @@ body .body-overlay {
   margin-bottom: 50px;
 }
 
+#msProject {
+  max-width: 35%;
+  height: auto;
+}
+
+#jira {
+  max-width: 35%;
+  height: auto;
+}
+
+#Squash {
+  max-width: 35%;
+  height: auto;
+}
+
+#postman {
+  max-width: 35%;
+  height: auto;
+}
+
+#Mantis {
+  max-width: 35%;
+  height: auto;
+}
+
+#GLPI {
+  max-width: 85%;
+  height: auto;
+}
+
+#Fresh-service {
+  max-width: 35%;
+  height: auto;
+}
+
+#cucumber {
+  max-width: 35%;
+  height: auto;
+}
+
+#Minitab {
+  max-width: 38%;
+  height: auto;
+}
+
+#sql {
+  max-width: 70%;
+  height: auto;
+}
+#java {
+  max-width: 35%;
+  height: auto;
+}
+
 .skills .skill .skill-inner {
   border: 2px solid #565656;
   border-radius: 85px;

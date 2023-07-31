@@ -36,8 +36,8 @@ export default function Lsb() {
           </a>
         </li>
       </ul>
-      <a href="#contact" className="theme-btn">
-        <i className="las la-envelope"></i> Engagez-moi !
+      <a href="https://drive.google.com/file/d/1-ZN72pNdgCLWh3C2rqdlqDKnHKP62R3K/view?usp=sharing" className="theme-btn">
+        <i className="las la-envelope"></i> Download CV
       </a>
     </div>
   );
