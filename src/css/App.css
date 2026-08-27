@@ -2335,3 +2335,567 @@ body .body-overlay {
     top: 0;
   }
 }
+/* =========================================================
+   NOUVEAU THEME PORTFOLIO - MOHAMED RGUEZ
+   ========================================================= */
+
+   :root {
+    --primary_color: #0f6f8f;
+    --portfolio-bg: #f4f7fa;
+    --portfolio-card: #ffffff;
+    --portfolio-title: #172b3a;
+    --portfolio-text: #5c6b76;
+    --portfolio-border: #dce4ea;
+}
+
+/* Fond général */
+body {
+    background: var(--portfolio-bg);
+    color: var(--portfolio-text);
+}
+
+/* Titres principaux */
+.section-header h1 {
+    color: var(--portfolio-title);
+    font-weight: 400;
+}
+
+.section-header h1 span {
+    color: var(--primary_color);
+}
+
+/* Petit titre PRESENTATION / COMPETENCES... */
+.subtitle {
+    color: var(--portfolio-title);
+    background: #ffffff;
+    border-color: var(--portfolio-border);
+}
+
+/* ==============================
+   SIDEBAR GAUCHE
+   ============================== */
+
+.left-sidebar {
+    background: #ffffff;
+    border: 1px solid var(--portfolio-border);
+    box-shadow: 0 10px 40px rgba(20, 50, 70, 0.08);
+}
+
+.left-sidebar .sidebar-header .designation,
+.left-sidebar .name,
+.left-sidebar h2 {
+    color: var(--portfolio-title);
+}
+
+.left-sidebar .copyright {
+    color: #7a8791;
+}
+
+.left-sidebar .social-profile li a {
+    color: var(--primary_color);
+    border-color: var(--portfolio-border);
+    background: #ffffff;
+}
+
+.left-sidebar .social-profile li a:hover {
+    color: #ffffff;
+    background: var(--primary_color);
+    border-color: var(--primary_color);
+}
+
+/* ==============================
+   MENU DROIT
+   ============================== */
+
+.menu,
+.icon-menu {
+    background: #ffffff;
+    border-color: var(--portfolio-border);
+    box-shadow: 0 6px 25px rgba(20, 50, 70, 0.08);
+}
+
+.icon-menu span {
+    background: var(--portfolio-title);
+}
+
+.menu li .scroll-to,
+.menu li a {
+    color: #687782;
+}
+
+/* ==============================
+   HERO / PRESENTATION
+   ============================== */
+
+.hero-section .hero-content h1 {
+    color: var(--portfolio-title);
+}
+
+.hero-section .hero-content h1 span {
+    color: var(--primary_color);
+}
+
+.hero-section .hero-content > p {
+    color: var(--portfolio-text);
+}
+
+.hero-section .hero-content .go-to-project-btn {
+    background: #ffffff;
+    border-color: var(--portfolio-border);
+}
+
+.hero-section .hero-content .go-to-project-btn i {
+    color: var(--primary_color);
+}
+
+/* ==============================
+   EXPERIENCE
+   ============================== */
+
+.resume-area .resume-content .resume-timeline .item h2,
+.resume-area .resume-content .resume-timeline .item h2 a {
+    color: var(--portfolio-title);
+}
+
+.resume-area .resume-content .resume-timeline .item p {
+    color: var(--portfolio-text);
+}
+
+.resume-area .resume-content .resume-timeline .item::after {
+    background: #d5dee5;
+}
+
+/* ==============================
+   COMPETENCES & EXPERTISES
+   ============================== */
+
+.services-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.services-items .service-item {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid var(--portfolio-border);
+    border-radius: 18px;
+    padding: 35px 35px;
+    margin-bottom: 0;
+    box-shadow: 0 8px 30px rgba(20, 50, 70, 0.06);
+    transition: all 0.3s ease;
+}
+
+.services-items .service-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary_color);
+    box-shadow: 0 14px 35px rgba(15, 111, 143, 0.13);
+}
+
+.services-items .service-item h2 {
+    color: var(--portfolio-title);
+    font-weight: 500;
+    padding-right: 45px;
+}
+
+.services-items .service-item p {
+    color: var(--portfolio-text);
+    margin-bottom: 0;
+}
+
+.services-items .service-item i {
+    color: var(--primary_color);
+    font-size: 36px;
+    top: 32px;
+    right: 30px;
+}
+
+/* ==============================
+   SKILLS
+   ============================== */
+
+.skills .skill .skill-inner {
+    background: #ffffff;
+    border-color: var(--portfolio-border);
+    box-shadow: 0 6px 25px rgba(20, 50, 70, 0.05);
+}
+
+.skills .skill p {
+    color: var(--portfolio-title);
+}
+
+/* ==============================
+   PORTFOLIO
+   ============================== */
+
+.portfolio-items .portfolio-item h2 a {
+    color: var(--portfolio-title);
+}
+
+/* ==============================
+   CONTACT
+   ============================== */
+
+.contact-area .contact-content h3,
+.contact-area .contact-content .contact-form .input-group label {
+    color: var(--portfolio-title);
+}
+
+.contact-area .contact-content .contact-form .input-group input,
+.contact-area .contact-content .contact-form .input-group textarea {
+    color: var(--portfolio-title);
+}
+
+/* ==============================
+   BOUTONS
+   ============================== */
+
+.theme-btn {
+    background: var(--primary_color);
+    border-color: var(--primary_color);
+    color: #ffffff;
+}
+
+.theme-btn:hover {
+    background: #ffffff;
+    color: var(--primary_color);
+}
+
+/* Responsive compétences */
+@media (max-width: 767px) {
+    .services-items {
+        grid-template-columns: 1fr;
+    }
+}
+/* =========================================================
+   EXPERTISE TECHNIQUE
+   ========================================================= */
+
+   .skills-intro {
+    max-width: 760px;
+    margin-top: 20px;
+    margin-bottom: 45px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--portfolio-text);
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.expertise-card {
+    background: #ffffff;
+    border: 1px solid var(--portfolio-border);
+    border-radius: 22px;
+    padding: 32px;
+    box-shadow: 0 10px 35px rgba(20, 50, 70, 0.06);
+    transition: all 0.3s ease;
+}
+
+.expertise-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary_color);
+    box-shadow: 0 16px 40px rgba(15, 111, 143, 0.12);
+}
+
+.expertise-card-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.expertise-main-icon {
+    width: 62px;
+    height: 62px;
+    min-width: 62px;
+    border-radius: 16px;
+    background: rgba(15, 111, 143, 0.09);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.expertise-main-icon i {
+    font-size: 32px;
+    color: var(--primary_color);
+}
+
+.expertise-card-header h2 {
+    color: var(--portfolio-title);
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.expertise-card-header p {
+    margin: 0;
+    color: var(--portfolio-text);
+    font-size: 14px;
+}
+
+.expertise-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.expertise-tag {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 13px;
+    background: #f5f8fa;
+    border: 1px solid var(--portfolio-border);
+    border-radius: 10px;
+    color: var(--portfolio-title);
+    font-size: 14px;
+    transition: all 0.25s ease;
+}
+
+.expertise-tag:hover {
+    background: rgba(15, 111, 143, 0.08);
+    border-color: var(--primary_color);
+}
+
+.expertise-tag i {
+    color: var(--primary_color);
+    font-size: 18px;
+}
+
+.expertise-tag small {
+    color: var(--primary_color);
+    font-size: 10px;
+    padding-left: 4px;
+}
+
+/* Veille */
+
+.learning-zone {
+    margin-top: 25px;
+    padding: 25px 30px;
+    background: #ffffff;
+    border: 1px dashed var(--portfolio-border);
+    border-radius: 18px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.learning-icon {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    border-radius: 50%;
+    background: rgba(15, 111, 143, 0.09);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learning-icon i {
+    color: var(--primary_color);
+    font-size: 27px;
+}
+
+.learning-zone h3 {
+    color: var(--portfolio-title);
+    margin-bottom: 5px;
+}
+
+.learning-zone p {
+    margin-bottom: 12px;
+    color: var(--portfolio-text);
+}
+
+.learning-tags {
+    display: flex;
+    gap: 8px;
+}
+
+.learning-tags span {
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: rgba(15, 111, 143, 0.09);
+    color: var(--primary_color);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 584px) {
+    .expertise-card {
+        padding: 22px;
+    }
+
+    .expertise-card-header {
+        align-items: flex-start;
+    }
+
+    .learning-zone {
+        align-items: flex-start;
+    }
+}
+/* =========================================================
+   SIDEBAR PROFESSIONNELLE
+   ========================================================= */
+
+   .left-sidebar .sidebar-header {
+    margin-bottom: 30px;
+}
+
+.left-sidebar .sidebar-header .designation {
+    color: var(--portfolio-title);
+    font-size: 20px;
+    line-height: 1.45;
+    font-weight: 500;
+    text-align: center;
+}
+
+.left-sidebar > img.me {
+    border-radius: 24px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(20, 50, 70, 0.10);
+}
+
+.left-sidebar .name {
+    color: var(--portfolio-title);
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+
+
+/* Coordonnées */
+
+.sidebar-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.sidebar-contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    color: var(--portfolio-text);
+    font-size: 15px;
+
+    transition: all 0.25s ease;
+}
+
+.sidebar-contact-item i {
+    color: var(--primary_color);
+    font-size: 19px;
+}
+
+.sidebar-contact-item:hover {
+    color: var(--primary_color);
+}
+
+
+/* Positionnement */
+
+.sidebar-positioning {
+    padding: 18px 15px;
+    margin-bottom: 25px;
+
+    background: #f5f8fa;
+    border: 1px solid var(--portfolio-border);
+    border-radius: 16px;
+}
+
+.sidebar-positioning p {
+    margin: 0;
+    color: var(--portfolio-title);
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.sidebar-positioning p + p {
+    margin-top: 7px;
+}
+
+.sidebar-positioning i {
+    color: var(--primary_color);
+    margin-right: 6px;
+}
+
+
+/* Actions */
+
+.sidebar-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.linkedin-btn {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    padding: 11px 20px;
+
+    border: 1px solid var(--primary_color);
+    border-radius: 30px;
+
+    color: var(--primary_color);
+    background: #ffffff;
+
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+.linkedin-btn i {
+    font-size: 21px;
+}
+
+.linkedin-btn:hover {
+    background: var(--primary_color);
+    color: #ffffff;
+}
+
+
+/* Copyright */
+
+.left-sidebar .copyright {
+    margin-bottom: 0;
+    color: #88949d;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.hero-section .hero-content h1 {
+  font-size: 54px;
+  line-height: 1.18;
+  letter-spacing: -1px;
+}
+@media (max-width: 787px) {
+  .hero-section .hero-content h1 {
+      font-size: 42px;
+      line-height: 1.2;
+  }
+}
+
+@media (max-width: 584px) {
+  .hero-section .hero-content h1 {
+      font-size: 36px;
+      line-height: 1.2;
+  }
+}
