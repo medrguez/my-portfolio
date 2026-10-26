@@ -2,6 +2,49 @@ import React, { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
+const services = [
+    {
+        icon: "las la-cogs",
+        title: "Industrialisation & mise en service",
+        text: "Installation de nouvelles lignes et remplacement de machines : cahier des charges (URS), choix des constructeurs, FAT, SAT, mise en service, levée des réserves et hypercare jusqu'à la stabilisation.",
+    },
+    {
+        icon: "las la-clipboard-check",
+        title: "Qualification des équipements",
+        text: "Qualification QI / QO / QP, capabilité machine et process (Cmk, Cpk), Gage R&R, validation hardware et software avant production.",
+    },
+    {
+        icon: "las la-exchange-alt",
+        title: "Transfert industriel",
+        text: "Transfert de produits et de lignes entre sites : programmes machines, gammes, nomenclatures, validation produit et démarrage série.",
+    },
+    {
+        icon: "las la-tachometer-alt",
+        title: "Performance industrielle & Lean",
+        text: "Suivi du TRS en temps réel, analyse des causes racines, SMED, Poka-Yoke, équilibrage de ligne et takt time.",
+    },
+    {
+        icon: "las la-tasks",
+        title: "Gestion de projet",
+        text: "Analyse des besoins, estimation des coûts, budget, planification (Gantt, PERT), coordination des équipes et des fournisseurs.",
+    },
+    {
+        icon: "las la-project-diagram",
+        title: "MES & ERP",
+        text: "Intégration des équipements au MES et à SAP selon le modèle ISA-95, au service de la production, de la traçabilité et de la performance.",
+    },
+    {
+        icon: "las la-industry",
+        title: "Manufacturing IT / IT-OT",
+        text: "Connexion des machines, réseaux Profinet, web services entre équipements et MES, mode Store & Forward pour garantir la traçabilité en cas de coupure.",
+    },
+    {
+        icon: "las la-barcode",
+        title: "Traçabilité & data",
+        text: "Traçabilité unitaire, sérialisation, OSIsoft PI, SQL Server, fiabilisation des Master Data et des flux de données.",
+    },
+]
+
 export default function Service() {
 
     useEffect(() => {
@@ -37,155 +80,19 @@ export default function Service() {
 
                     <div className="services-items">
 
-                        <div
-                            className="service-item scroll-animation"
-                            data-aos="fade-up"
-                        >
-                            <i className="las la-industry"></i>
+                        {services.map((s) => (
+                            <div
+                                key={s.title}
+                                className="service-item scroll-animation"
+                                data-aos="fade-up"
+                            >
+                                <i className={s.icon}></i>
 
-                            <h2>
-                                Manufacturing IT / IT-OT
-                            </h2>
+                                <h2>{s.title}</h2>
 
-                            <p>
-                                Intégration des systèmes industriels,
-                                interopérabilité IT/OT, communication entre
-                                applications, équipements de production
-                                et systèmes d'information.
-                            </p>
-                        </div>
-
-
-                        <div
-                            className="service-item scroll-animation"
-                            data-aos="fade-up"
-                        >
-                            <i className="las la-desktop"></i>
-
-                            <h2>
-                                Applications industrielles
-                            </h2>
-
-                            <p>
-                                Support applicatif, analyse fonctionnelle
-                                et technique, résolution d'incidents,
-                                maintenance corrective et évolutive,
-                                accompagnement des utilisateurs.
-                            </p>
-                        </div>
-
-
-                        <div
-                            className="service-item scroll-animation"
-                            data-aos="fade-up"
-                        >
-                            <i className="las la-project-diagram"></i>
-
-                            <h2>
-                                MES & ERP
-                            </h2>
-
-                            <p>
-                                Analyse des besoins, intégration,
-                                optimisation et support des systèmes MES
-                                et ERP au service de la production,
-                                de la traçabilité et de la performance.
-                            </p>
-                        </div>
-
-
-                        <div
-                            className="service-item scroll-animation"
-                            data-aos="fade-up"
-                        >
-                            <i className="las la-database"></i>
-
-                            <h2>
-                                PIMS / Historian & Data
-                            </h2>
-
-                            <p>
-                                Exploitation des données industrielles,
-                                OSIsoft PI, SQL Server, suivi des Master Data,
-                                analyse et fiabilisation des flux de données.
-                            </p>
-                        </div>
-
-
-                        <div
-                            className="service-item scroll-animation"
-                            data-aos="fade-up"
-                        >
-                            <i className="las la-network-wired"></i>
-
-                            <h2>
-                                SCADA & Connectivité industrielle
-                            </h2>
-
-                            <p>
-                                Connexion des équipements industriels,
-                                réseaux Profinet, interfaces techniques,
-                                acquisition des données et supervision
-                                des systèmes de production.
-                            </p>
-                        </div>
-
-
-                        <div
-                            className="service-item scroll-animation"
-                            data-aos="fade-up"
-                        >
-                            <i className="las la-digital-tachograph"></i>
-
-                            <h2>
-                                Digital Manufacturing
-                            </h2>
-
-                            <p>
-                                Digitalisation des processus industriels,
-                                automatisation des tâches, traçabilité,
-                                KPI, reporting et accompagnement
-                                des démarches Industrie 4.0.
-                            </p>
-                        </div>
-
-
-                        <div
-                            className="service-item scroll-animation"
-                            data-aos="fade-up"
-                        >
-                            <i className="las la-tasks"></i>
-
-                            <h2>
-                                Gestion de projet
-                            </h2>
-
-                            <p>
-                                Analyse des besoins, cahiers des charges,
-                                estimation, planification, coordination
-                                des équipes, suivi des tests,
-                                FAT/SAT et déploiement.
-                            </p>
-                        </div>
-
-
-                        <div
-                            className="service-item scroll-animation"
-                            data-aos="fade-up"
-                        >
-                            <i className="las la-cogs"></i>
-
-                            <h2>
-                                Industrialisation & amélioration continue
-                            </h2>
-
-                            <p>
-                                Optimisation des processus de fabrication,
-                                réduction des temps de cycle, SMED,
-                                analyse des causes racines et amélioration
-                                de la performance opérationnelle.
-                            </p>
-                        </div>
+                                <p>{s.text}</p>
+                            </div>
+                        ))}
 
                     </div>
 

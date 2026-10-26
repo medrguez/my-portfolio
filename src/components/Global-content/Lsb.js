@@ -7,9 +7,9 @@ export default function Lsb() {
 
       <div className="sidebar-header">
         <h3 className="designation">
-          Consultant Applicatif
+          Chef de Projet Industriel
           <br />
-          Manufacturing IT-OT
+          Industrialisation & IT-OT
         </h3>
       </div>
 
@@ -44,7 +44,7 @@ export default function Lsb() {
       <div className="sidebar-positioning">
         <p>
           <i className="las la-industry"></i>
-          Industrie • Digital Manufacturing • IT/OT
+          Industrialisation • Équipements • IT/OT
         </p>
 
         <p>

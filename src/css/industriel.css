@@ -1,0 +1,251 @@
+/* =========================================================
+   THEME "INDUSTRIEL" - MOHAMED RGUEZ
+   Marine + orange, titres Oswald, texte IBM Plex Sans
+   Pour revenir a l'ancien design : retirer l'import dans App.js
+   ========================================================= */
+
+:root {
+  --primary_color: #e8772e;
+  --ind-navy: #13202e;
+  --ind-navy-2: #1c2e40;
+  --ind-bg: #f4f1ea;
+  --ind-card: #fffdf8;
+  --ind-line: #ddd6c8;
+  --ind-title: #13202e;
+  --ind-text: #4a5568;
+  --ind-orange-dark: #b9541a;
+  --portfolio-bg: #f4f1ea;
+  --portfolio-title: #13202e;
+  --portfolio-text: #4a5568;
+  --portfolio-border: #ddd6c8;
+}
+
+html body {
+  font-family: 'IBM Plex Sans', 'Inter', sans-serif;
+  background: var(--ind-bg);
+  color: var(--ind-text);
+}
+
+/* ---------- Titres ---------- */
+.section-header h1,
+.hero-section .hero-content h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--ind-title);
+  line-height: 1.15;
+}
+.section-header h1 span,
+.hero-section .hero-content h1 span {
+  color: var(--primary_color);
+}
+.subtitle {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: var(--ind-orange-dark);
+  background: transparent;
+  border: none;
+  border-left: 4px solid var(--primary_color);
+  border-radius: 0;
+  padding: 2px 0 2px 14px;
+}
+.subtitle i { color: var(--primary_color); }
+
+/* ---------- Sidebar gauche : bloc marine ---------- */
+.left-sidebar {
+  background: var(--ind-navy);
+  border: none;
+  box-shadow: 0 20px 50px rgba(19, 32, 46, 0.25);
+  border-top: 6px solid var(--primary_color);
+}
+.left-sidebar .sidebar-header .designation {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--primary_color);
+}
+.left-sidebar .name {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #f4f1ea;
+}
+.left-sidebar > img.me {
+  border: 4px solid var(--primary_color);
+}
+.left-sidebar .sidebar-contact-item,
+.left-sidebar .sidebar-contact-item span { color: #bfcad4; }
+.left-sidebar .sidebar-contact-item:hover span { color: var(--primary_color); }
+.left-sidebar .sidebar-positioning {
+  background: var(--ind-navy-2);
+  border: 1px solid #2c4258;
+  color: #f4f1ea;
+}
+.left-sidebar .sidebar-positioning p { color: #f4f1ea; }
+.left-sidebar .sidebar-positioning i { color: var(--primary_color); }
+.left-sidebar .linkedin-btn {
+  background: transparent;
+  color: #f4f1ea;
+  border: 1px solid #f4f1ea;
+}
+.left-sidebar .linkedin-btn:hover {
+  background: #f4f1ea;
+  color: var(--ind-navy);
+}
+.left-sidebar .theme-btn,
+.theme-btn {
+  background: var(--primary_color);
+  border-color: var(--primary_color);
+  color: var(--ind-navy);
+  font-weight: 600;
+}
+.left-sidebar .theme-btn:hover,
+.theme-btn:hover {
+  background: #f4f1ea;
+  border-color: #f4f1ea;
+  color: var(--ind-navy);
+}
+.left-sidebar .copyright { color: #8fa0b0; }
+
+/* ---------- Hero ---------- */
+.hero-section .hero-content p { color: var(--ind-text); font-size: 18px; }
+.hero-section .hero-content .facts .left,
+.hero-section .hero-content .facts .right {
+  background: var(--ind-card);
+  border: 1px solid var(--ind-line);
+  border-top: 5px solid var(--primary_color);
+  border-radius: 10px;
+  padding: 20px 28px;
+  margin-right: 24px;
+}
+.hero-section .hero-content .facts h1 {
+  font-family: 'Oswald', sans-serif;
+  color: var(--ind-navy);
+}
+.hero-section .hero-content .facts p { color: var(--ind-text); }
+
+/* ---------- Parcours ---------- */
+.resume-area .resume-content .resume-timeline .item {
+  background: var(--ind-card);
+  border: 1px solid var(--ind-line);
+  border-radius: 12px;
+  padding: 28px 32px 24px 32px;
+  margin-bottom: 28px;
+  margin-left: 28px;
+}
+.resume-area .resume-content .resume-timeline .item::after {
+  background: var(--ind-line);
+}
+.resume-area .resume-content .resume-timeline .item::before {
+  background: var(--primary_color);
+  box-shadow: 0 0 0 5px rgba(232, 119, 46, 0.2);
+}
+.resume-area .resume-content .resume-timeline .item .date {
+  display: inline-block;
+  font-weight: 600;
+  color: var(--ind-navy);
+  background: rgba(232, 119, 46, 0.15);
+  border-radius: 20px;
+  padding: 2px 14px;
+}
+.resume-area .resume-content .resume-timeline .item h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  color: var(--ind-title);
+  margin-top: 14px;
+}
+.resume-area .resume-content .resume-timeline .item h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ind-orange-dark);
+  margin-bottom: 14px;
+}
+.resume-area .resume-content .resume-timeline .item ul {
+  list-style: none;
+  padding-left: 0;
+}
+.resume-area .resume-content .resume-timeline .item ul li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 8px;
+  color: var(--ind-text);
+  line-height: 1.6;
+}
+.resume-area .resume-content .resume-timeline .item ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  background: var(--primary_color);
+}
+
+/* ---------- Competences (cartes) ---------- */
+.services-items .service-item {
+  background: var(--ind-card);
+  border: 1px solid var(--ind-line);
+  border-top: 5px solid var(--primary_color);
+  border-radius: 10px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.services-items .service-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(19, 32, 46, 0.12);
+  border-color: var(--primary_color);
+}
+.services-items .service-item h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  color: var(--ind-title);
+}
+.services-items .service-item i { color: var(--primary_color); }
+.services-items .service-item p { color: var(--ind-text); }
+
+/* ---------- Expertise technique ---------- */
+.expertise-card {
+  background: var(--ind-card);
+  border: 1px solid var(--ind-line);
+}
+.expertise-card:nth-child(2) {
+  background: var(--ind-navy);
+  border-color: var(--ind-navy);
+}
+.expertise-card:nth-child(2) h2 { color: #f4f1ea; }
+.expertise-card:nth-child(2) p { color: #bfcad4; }
+.expertise-card:nth-child(2) .expertise-tag {
+  background: var(--ind-navy-2);
+  border-color: #2c4258;
+  color: #f4f1ea;
+}
+.expertise-card h2 { font-family: 'Oswald', sans-serif; font-weight: 500; }
+.expertise-main-icon { background: var(--primary_color); color: var(--ind-navy); }
+.expertise-tag i { color: var(--primary_color); }
+.expertise-tag:hover { border-color: var(--primary_color); }
+
+/* ---------- Realisations ---------- */
+.portfolio-item h2 a {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  color: var(--ind-title);
+}
+.portfolio-item h2 a:hover { color: var(--primary_color); }
+.portfolio-categories li a {
+  background: var(--ind-navy);
+  color: #f4f1ea;
+}
+
+/* ---------- Menu droit ---------- */
+.menu, .icon-menu {
+  background: var(--ind-navy);
+  border-color: var(--ind-navy);
+}
+.icon-menu span { background: #f4f1ea; }
+.menu li a { color: #8fa0b0; }
+.menu li a:hover, .menu li a.active { color: var(--primary_color); }

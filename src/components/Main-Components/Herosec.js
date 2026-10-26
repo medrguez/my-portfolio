@@ -34,7 +34,7 @@ export default function Herosec() {
                             Bonjour, je suis
                             <span> Mohamed Rguez</span>,
                             <br />
-                            Consultant Applicatif / Manufacturing IT-OT
+                            Chef de Projet Industriel – Industrialisation
                         </h1>
 
                     </div>
@@ -43,23 +43,22 @@ export default function Herosec() {
                         className="scroll-animation"
                         data-aos="fade-up"
                     >
-                        Ingénieur avec près de 19 ans d'expérience dans
-                        les environnements industriels, j'accompagne les
-                        entreprises dans la digitalisation de leurs
-                        processus, le support et l'évolution de leurs
-                        applications industrielles ainsi que
-                        l'intégration des systèmes IT et OT.
+                        Ingénieur avec près de 19 ans d'expérience en
+                        environnement de production, je pilote le cycle
+                        de vie complet des équipements : du cahier des
+                        charges (URS) aux FAT, SAT, à la qualification
+                        et au démarrage série.
                     </p>
 
                     <p
                         className="scroll-animation"
                         data-aos="fade-up"
                     >
-                        Mon expertise couvre notamment le Digital
-                        Manufacturing, les systèmes MES et ERP,
-                        le PIMS/Historian, le SCADA, la traçabilité,
-                        le support applicatif, l'industrialisation
-                        et l'amélioration continue.
+                        Installation et transfert de lignes de production,
+                        qualification des équipements, performance
+                        industrielle et amélioration continue, avec une
+                        double compétence IT/OT : intégration des machines
+                        au MES et à l'ERP selon le modèle ISA-95.
                     </p>
 
                     <a
@@ -94,12 +93,12 @@ export default function Herosec() {
                             className="right scroll-animation"
                             data-aos="fade-left"
                         >
-                            <h1>3</h1>
+                            <h1>4</h1>
 
                             <p>
-                                Secteurs industriels
+                                Pays de
                                 <br />
-                                majeurs
+                                déploiement
                             </p>
                         </div>
 

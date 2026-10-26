@@ -25,7 +25,7 @@ export default function Portfolio() {
         <div className="portfolio-content content-width">
           <div className="section-header">
             <h4 className="subtitle scroll-animation" data-aos="fade-up">
-              <i className="las la-grip-vertical"></i> portefeuille
+              <i className="las la-grip-vertical"></i> Réalisations
             </h4>
             <h1 className="scroll-animation">
               {" "}
@@ -74,9 +74,8 @@ export default function Portfolio() {
                 </div>
                 <h2>
                   <a href="#projet1">
-                    CHef de projet - Projet d'Optimisation des Processus,
-                    Automatisation des Tâches et Traçabilité pour une
-                    Performance Améliorée
+                    Chef de projet | Automatisation des tâches et
+                    traçabilité connectée au MES
                   </a>
                 </h2>
               </div>
@@ -187,7 +186,7 @@ export default function Portfolio() {
                 </div>
                 <h2>
                   <a href="#projet2">
-                    Chef de projet | RTM (Real-time monitoring){" "}
+                    Chef de projet | RTM : suivi du TRS en temps réel{" "}
                   </a>
                 </h2>
               </div>
@@ -237,7 +236,7 @@ export default function Portfolio() {
                 </div>
                 <h2>
                   <a href="#projet3">
-                    Ingenieur Conception & Instatlation | poka-yoke Juki
+                    Ingénieur conception & installation | Poka-Yoke JUKI
                   </a>
                 </h2>
               </div>

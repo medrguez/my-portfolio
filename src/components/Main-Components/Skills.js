@@ -35,6 +35,18 @@ export default function Skills() {
 
     const industrialSkills = [
         { name: "Industrialisation", icon: "las la-industry" },
+        { name: "Installation de lignes", icon: "las la-cogs" },
+        { name: "Transfert industriel", icon: "las la-exchange-alt" },
+        { name: "URS / Cahier des charges", icon: "las la-file-alt" },
+        { name: "QI / QO / QP", icon: "las la-clipboard-check" },
+        { name: "Cmk / Cpk / Gage R&R", icon: "las la-ruler" },
+        { name: "Lignes CMS", icon: "las la-microchip" },
+        { name: "Assemblage mécanique", icon: "las la-wrench" },
+        { name: "Équilibrage de ligne", icon: "las la-balance-scale" },
+        { name: "Poka-Yoke", icon: "las la-shield-alt" },
+        { name: "ISA-95", icon: "las la-sitemap" },
+        { name: "Hypercare", icon: "las la-life-ring" },
+        { name: "Store & Forward", icon: "las la-sync" },
         { name: "Digital Manufacturing", icon: "las la-digital-tachograph" },
         { name: "Industrie 4.0", icon: "las la-microchip" },
         { name: "Process de fabrication", icon: "las la-cogs" },

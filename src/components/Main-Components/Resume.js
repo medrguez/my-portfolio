@@ -2,6 +2,84 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+const experiences = [
+  {
+    date: "07/2025 - 12/2025",
+    title: "Chef de Projet Digital Manufacturing",
+    company: "Actemium Software — Groupe VINCI | Saint-Étienne",
+    items: [
+      "Chef de projet côté intégrateur : évolution du MES et de ses interfaces avec le nouvel ERP SAP, en garantissant la traçabilité et la continuité de production.",
+      "Analyse des besoins, cahier des charges, estimation des charges et des coûts, planification des ressources.",
+      "Coordination des équipes de développement jusqu'aux FAT, SAT et à la mise en service.",
+      "Conseil au client sur l'intégration des équipements, du MES et de l'ERP selon le modèle ISA-95.",
+      "Développement d'endpoints API pour l'interfaçage MES-SAP (Blazor .NET, C#, SQL Server).",
+    ],
+  },
+  {
+    date: "06/2024 - 07/2025",
+    title: "Ingénieur Projet Performance Industrielle",
+    company: "Iveco Bus | Annonay",
+    items: [
+      "Responsable fonctionnel d'une ligne d'assemblage mécanique d'environ 60 personnes, garant de la cadence et du planning ; animation des réunions quotidiennes de production.",
+      "Équilibrage de ligne : analyse des tâches selon leur complexité et leurs dépendances, graphe des antériorités et chemin critique (PERT, Gantt).",
+      "Calcul du takt time, dimensionnement des postes et des effectifs, redistribution des tâches.",
+      "Recommandation d'outillages pour simplifier les opérations et réduire les temps de cycle (Lean).",
+      "Audit du système d'information de production (MES / ERP) et rédaction du cahier des charges des corrections.",
+    ],
+  },
+  {
+    date: "01/2024 - 05/2024",
+    title: "Ingénieur Informatique Industriel",
+    company: "Fareva Excel Vision | Annonay",
+    items: [
+      "Sérialisation pharmaceutique : traçabilité unitaire de chaque boîte, des données jusqu'aux lignes de conditionnement.",
+      "Administration et maintenance du MES Guardian ; Master Data produits et ordres de travail.",
+      "Pilotage des tests End-to-End (E2E) et Site-to-Site (S2S), contrôles sur équipements et IHM.",
+      "Diagnostic et résolution des défaillances sur Advisor et Sentri, flux Systech / Sentri.",
+    ],
+  },
+  {
+    date: "03/2023 - 12/2023",
+    title: "Senior TMA — PIMS",
+    company: "Capgemini — Lilly Strasbourg",
+    items: [
+      "Maintenance corrective et évolutive du PIMS (OSIsoft PI), gestion des incidents et monitoring.",
+      "Correction de données OSIsoft PI et SQL Server, intégrité des Master Data et des transferts.",
+      "Contribution à la configuration des lignes de production (automates, équipements spécifiques).",
+      "Support utilisateurs, documentation et astreintes pour la continuité de production.",
+    ],
+  },
+  {
+    date: "01/2014 - 12/2022",
+    title: "Chef de Projet Industrialisation & Digital Manufacturing",
+    company: "Lacroix Electronics | Tunisie",
+    items: [
+      "Référent technique du site, à l'interface entre process, méthodes, informatique industrielle et amélioration continue.",
+      "Installation et transfert de lignes de production, remplacement de machines : URS, consultation des constructeurs, FAT chez le fabricant, SAT, mise en service et levée des réserves.",
+      "Installation d'une ligne CMS complète (environ 1 M€) : dépileur, convoyeurs, Siplace, JUKI, four Soltec, inspection Parmi, empileur.",
+      "Automatisation du marquage : gravure laser ASYS connectée au MES par web services, en remplacement des étiquettes Data Matrix et des scans manuels. Mode Store & Forward : en cas de perte de connexion au MES, la machine stocke les données en local puis les retransmet dès que la connexion est rétablie, sans perte de traçabilité.",
+      "Pilotage de bout en bout : URS, FAT chez le constructeur en Allemagne, SAT, qualification QI / QO / QP et hypercare jusqu'à la stabilisation en production.",
+      "Qualification et validation hardware et software des équipements ; Poka-Yoke déployés en France, Pologne et Allemagne.",
+      "Architecture d'intégration ISA-95 (machines, automates, MES, ERP) et connexion des machines au serveur MES.",
+      "Conception et déploiement du RTM (TRS, TRG, FPY, MTTR, MTBF) en Tunisie, France, Pologne et Allemagne : TRS passé de 50 % à 85 %.",
+      "Gestion des budgets, délais, risques et conduite du changement.",
+    ],
+  },
+  {
+    date: "03/2007 - 06/2014",
+    title: "Ingénieur Industrialisation & Qualification Équipements",
+    company: "Lacroix Electronics | Tunisie",
+    items: [
+      "Réception et qualification des machines des lignes CMS (sérigraphie, placement, refusion, AOI) : QI / QO / QP avant mise en production.",
+      "Études de capabilité machine et process (Cmk, Cpk) et de répétabilité / reproductibilité (Gage R&R).",
+      "Transferts industriels inter-sites : programmes machines, gammes et nomenclatures, validation produit (premiers articles, capabilité) et démarrage série.",
+      "Industrialisation des nouveaux produits (NPI) : programmes machines, configuration SAP (classification, gammes, nomenclatures).",
+      "Machines d'insertion de pins avec contrôle d'effort, dispensing et fixation de radiateurs.",
+      "Troubleshooting des pannes complexes avec astreinte 24h/24 ; réduction des temps de cycle et SMED.",
+    ],
+  },
+];
+
 export default function Resume() {
 
   useEffect(() => {
@@ -36,338 +114,27 @@ export default function Resume() {
 
           <div className="resume-timeline">
 
-            {/* ACTEMIUM */}
-            <div
-              className="item scroll-animation"
-              data-aos="fade-right"
-            >
-              <span className="date">07/2025 - 12/2025</span>
-
-                <h2>Chef de Projet Digital Manufacturing</h2>
-
-                <h3>Actemium Software — Groupe VINCI | Saint-Étienne</h3>
-
-              <ul>
-                <li>
-                  Pilotage de projets de digitalisation industrielle :
-                  MES, traçabilité, gestion de batchs,
-                  interopérabilité IT/OT, datawarehouse et
-                  Smart Manufacturing.
-                </li>
-
-                <li>
-                  Analyse des besoins clients et rédaction
-                  des cahiers des charges.
-                </li>
-
-                <li>
-                  Estimation des charges et des coûts,
-                  planification des ressources humaines
-                  et techniques.
-                </li>
-
-                <li>
-                  Coordination des équipes de développement
-                  de la conception jusqu'au déploiement.
-                </li>
-
-                <li>
-                  Supervision des tests FAT/SAT,
-                  mise en service et support client.
-                </li>
-
-                <li>
-                  Développement d'endpoints API pour
-                  l'interfaçage entre le MES et SAP.
-                </li>
-
-                <li>
-                  Environnement : Blazor (.NET),
-                  C# et SQL Server.
-                </li>
-              </ul>
-            </div>
-
-
-            {/* IVECO */}
-            <div
-              className="item scroll-animation"
-              data-aos="fade-left"
-            >
-              <span className="date">06/2024 - 07/2025</span>
-
-                    <h2>Chef de Projet Technique Industriel</h2>
-
-                    <h3>Iveco Bus | Annonay</h3>
-
-              <ul>
-                <li>
-                  Maintenance et support applicatif
-                  des applications industrielles en production.
-                </li>
-
-                <li>
-                  Analyse et résolution des incidents
-                  et accompagnement des utilisateurs.
-                </li>
-
-                <li>
-                  Analyse des besoins métiers et proposition
-                  de solutions techniques adaptées.
-                </li>
-
-                <li>
-                  Développement et paramétrage de solutions
-                  spécifiques sur des systèmes MES et ERP.
-                </li>
-
-                <li>
-                  Analyse et optimisation des performances
-                  des applications.
-                </li>
-
-                <li>
-                  Rédaction de documentation technique
-                  et de guides utilisateurs.
-                </li>
-
-                <li>
-                  Optimisation des processus industriels
-                  et amélioration continue.
-                </li>
-              </ul>
-            </div>
-
-
-            {/* FAREVA */}
-            <div
-              className="item scroll-animation"
-              data-aos="fade-right"
-            >
-              <span className="date">01/2024 - 05/2024</span>
-
-              <h2>Ingénieur Informatique Industriel</h2>
-
-              <h3>Fareva Excel Vision | Annonay</h3>
-
-              <ul>
-                <li>
-                  Administration et maintenance
-                  du système MES Guardian.
-                </li>
-
-                <li>
-                  Support des processus de sérialisation
-                  pharmaceutique.
-                </li>
-
-                <li>
-                  Création et gestion des Master Data
-                  produits et ordres de travail.
-                </li>
-
-                <li>
-                  Pilotage des tests End-to-End (E2E)
-                  et Site-to-Site (S2S).
-                </li>
-
-                <li>
-                  Contrôles techniques sur les équipements
-                  de production et les IHM.
-                </li>
-
-                <li>
-                  Extraction et analyse des données
-                  depuis les bases SQL.
-                </li>
-
-                <li>
-                  Diagnostic et résolution des défaillances
-                  sur Advisor et Sentri.
-                </li>
-
-                <li>
-                  Gestion des flux d'information
-                  entre Systech et Sentri.
-                </li>
-              </ul>
-            </div>
-
-
-            {/* CAPGEMINI / LILLY */}
-            <div
-              className="item scroll-animation"
-              data-aos="fade-left"
-            >
-              <span className="date">03/2023 - 12/2023</span>
-
-              <h2>Senior TMA — PIMS</h2>
-
-              <h3>Capgemini — Lilly Strasbourg</h3>
-
-              <ul>
-                <li>
-                  Maintenance évolutive et corrective
-                  des systèmes d'information industriels.
-                </li>
-
-                <li>
-                  Gestion des incidents et monitoring
-                  des applications.
-                </li>
-
-                <li>
-                  Gestion et correction des données
-                  avec OSIsoft PI et SQL Server.
-                </li>
-
-                <li>
-                  Suivi de l'intégrité des Master Data
-                  et des transferts de données.
-                </li>
-
-                <li>
-                  Contribution à la configuration
-                  des lignes de production intégrant
-                  automates et équipements spécifiques.
-                </li>
-
-                <li>
-                  Support utilisateurs, documentation
-                  et coordination technique.
-                </li>
-
-                <li>
-                  Participation aux astreintes afin
-                  d'assurer la continuité de production
-                  et la traçabilité.
-                </li>
-              </ul>
-            </div>
-
-
-            {/* LACROIX MES */}
-            <div
-              className="item scroll-animation"
-              data-aos="fade-right"
-            >
-              <span className="date">01/2014 - 12/2022</span>
-
-              <h2>Chef de Projet MES & Smart Industrie</h2>
-
-              <h3>Lacroix Electronics | Tunisie</h3>
-
-              <ul>
-                <li>
-                  Pilotage de la transformation digitale
-                  de l'usine selon les principes
-                  de l'Industrie 4.0.
-                </li>
-
-                <li>
-                  Pilotage de projets MES et
-                  Smart Industry.
-                </li>
-
-                <li>
-                  Analyse des besoins, conception
-                  et mise en œuvre de solutions MES.
-                </li>
-
-                <li>
-                  Gestion des budgets, délais,
-                  risques et conduite du changement.
-                </li>
-
-                <li>
-                  Conception d'interfaces permettant
-                  l'intégration du MES avec
-                  les systèmes existants.
-                </li>
-
-                <li>
-                  Automatisation des processus
-                  et digitalisation des KPI
-                  et du reporting.
-                </li>
-
-                <li>
-                  Tests fonctionnels, support technique
-                  et résolution des anomalies
-                  MES, ERP et équipements.
-                </li>
-              </ul>
-            </div>
-
-
-            {/* LACROIX INDUSTRIALISATION */}
-            <div
-              className="item scroll-animation"
-              data-aos="fade-left"
-            >
-              <span className="date">03/2007 - 06/2014</span>
-
-              <h2>
-                Ingénieur support applicatif/Technique
-              </h2>
-
-              <h3>Lacroix Electronics | Tunisie</h3>
-
-              <ul>
-                <li>
-                  Programmation et validation
-                  des machines de production.
-                </li>
-
-                <li>
-                  Développement et optimisation
-                  des programmes de pose.
-                </li>
-
-                <li>
-                  Vérification des fichiers Gerber/CAO
-                  et des données clients.
-                </li>
-
-                <li>
-                  Optimisation des temps de cycle
-                  et réduction des temps SMED.
-                </li>
-
-                <li>
-                  Analyse des causes racines
-                  et mise en place d'actions
-                  correctives et préventives.
-                </li>
-
-                <li>
-                  Création de programmes
-                  de contrôle AOI.
-                </li>
-
-                <li>
-                  Collaboration avec les équipes
-                  de test ICT/FCT.
-                </li>
-
-                <li>
-                  Support technique des équipements
-                  et machines de production.
-                </li>
-
-                <li>
-                  Collaboration avec la maintenance,
-                  Supply Chain, R&D, qualité
-                  et production.
-                </li>
-              </ul>
-            </div>
-
+            {experiences.map((exp, i) => (
+              <div
+                key={exp.date}
+                className="item scroll-animation"
+                data-aos={i % 2 === 0 ? "fade-right" : "fade-left"}
+              >
+                <span className="date">{exp.date}</span>
+                <h2>{exp.title}</h2>
+                <h3>{exp.company}</h3>
+                <ul>
+                  {exp.items.map((item, j) => (
+                    <li key={j}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
 
             {/* FORMATION */}
             <div
               className="item scroll-animation"
-              data-aos="fade-right"
+              data-aos="fade-left"
             >
               <span className="date">2001 - 2006</span>
 
