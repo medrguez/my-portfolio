@@ -66,7 +66,7 @@ export default function Lsb() {
         </a>
 
         <a
-          href="https://drive.google.com/file/d/1-ZN72pNdgCLWh3C2rqdlqDKnHKP62R3K/view?usp=sharing"
+          href="/CV_Mohamed_Rguez_Chef_Projet_Industriel.pdf"
           target="_blank"
           rel="noreferrer"
           className="theme-btn"
